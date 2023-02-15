@@ -4,8 +4,16 @@ on:
     branches:
       - main
       - dev
+# Workflow level env variable assignment      
+# env:
+#   MONGO_DB_NAME: namedb
 jobs:
   test:
+    # job level environment assignment
+    env:
+      MONGO_DB_NAME: ${{ secrets.MONGO_DB_USERNAME }}
+      MONGO_DB_PASSWORD: ${{ secrets.MONGO_DB_PASSWORD }}
+      MONGO_DB_ADDRESS: ${{ secrets.MONGO_CLUSTER_ADDRESS }}
     environment: testing
     runs-on: ubuntu-latest
     steps:

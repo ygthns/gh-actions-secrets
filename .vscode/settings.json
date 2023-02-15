@@ -1,0 +1,7 @@
+{
+    "ecl.launchConfiguration": "not found",
+    "ecl.targetCluster": {},
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///c%3A/Users/YigithanSaglam/Desktop/gh-actions/gh-actions-secrets/.github/workflows/deploy.yml"
+    }
+}
